@@ -17,17 +17,18 @@ public class PetSelectorProject{
         String userColor = userInput.nextLine().toLowerCase().trim();
         System.out.println("Please type in your favorite season (Either winter, spring, summer, or fall.) and press enter.");
         String userSeason = userInput.nextLine().toLowerCase().trim();
-        System.out.println("Name = " + userName);
-        System.out.println("Color = " + userColor);
-        System.out.println("Season = " + userSeason);
+        //System.out.println("Name = " + userName);
+        //System.out.println("Color = " + userColor);
+        //System.out.println("Season = " + userSeason);
 
-        //Gets the first letter of the user's name.
+        //Gets the first letter of the user's name that was typed in.
         String nameFirstLetter = userName.substring(0, 1);
         
         //Lists to have a reference for what a vowel and what a consonant is.
         String vowelList = "aeoiu";
         String consonantsList = "bcdfghjklmnpqrstvwxyz";
 
+        //If statements if the name has a vowel as the first letter.
         if (vowelList.contains(nameFirstLetter)){
             if (userColor.equals("red")){
                System.out.println("Your perfect pet is: Porcupine!"); 
@@ -36,15 +37,25 @@ public class PetSelectorProject{
                 if(userSeason.equals("summer")){
                     System.out.println("Your perfect pet is: Pony!");  
                 }
+                else{
+            System.out.println("Your perfect pet is: Rock!");
+                }
             
             }
             else if (userColor.equals("green")){
                 if(userSeason.equals("spring")){
                      System.out.println("Your perfect pet is: Dog!"); 
                 }
+                else{
+            System.out.println("Your perfect pet is: Rock!");
+                }
             }
+            else{
+            System.out.println("Your perfect pet is: Rock!");
         }
-
+        }
+        
+        //If statements if the name has a consonant as the first letter.
         else if (consonantsList.contains(nameFirstLetter)){
             if (userColor.equals("red")){
                System.out.println("Your perfect pet is: Panda!"); 
@@ -62,6 +73,9 @@ public class PetSelectorProject{
                 else if(userSeason.equals("summer")){
                      System.out.println("Your perfect pet is: Pony!"); 
                 }
+                else{
+            System.out.println("Your perfect pet is: Rock!");
+                 }
             }
             else if(userColor.equals("green")){
                 if(userSeason.equals("winter")){
@@ -73,16 +87,21 @@ public class PetSelectorProject{
                 else if(userSeason.equals("summer")){
                      System.out.println("Your perfect pet is: Dog!"); 
                 }
+                else{
+            System.out.println("Your perfect pet is: Rock!");
+                }
                 
             }
+            else{
+            System.out.println("Your perfect pet is: Rock!");
         }
+        }
+
+        //If no condition is met from the previous if statements.
         else{
             System.out.println("Your perfect pet is: Rock!");
         }
         
-
-
-
 
     }
 
