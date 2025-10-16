@@ -1,6 +1,6 @@
 import java.util.*;
 
-// Peter Daniel, 10/13/25, This program will ask the user their name, favorite season, and favorite color, and will determine from those inputs the user's selected pet.
+// Peter Daniel, 10/13/25, This program will ask the user their name, favorite season, and favorite color, and will determine from those inputs the user's selected pet using boolean values.
 public class PetSelectorProject{
     public static void main(String [] args){
         //ask the user for input (name, season, and color)
