@@ -1,15 +1,15 @@
 import java.util.*;
 
-// Peter Daniel, 10/13/25
+// Peter Daniel, 10/13/25, This program will ask the user their name, favorite season, and favorite color, and will determine from those inputs the user's selected pet.
 public class PetSelectorProject{
     public static void main(String [] args){
         //ask the user for input (name, season, and color)
         //make sure the input is valid (Idiot Proof!)
         //make a decision
         //tell the user what they get
-        //for scanner, use .nextLine
+        //for scanner, use .nextLine()
         
-        //The messages will prompt the user what to type in the terminal, and will use .nextLine().toLowerCase() in order to locate what was put into the terminal, .
+        //The messages will prompt the user what to type in the terminal, and will use .nextLine().toLowerCase().trim() in order to locate what was put into the terminal, make the input lowercase, and trim the message.
         Scanner userInput = new Scanner(System.in);
         System.out.println("Please type in your first name and press enter.");
         String userName = userInput.nextLine().toLowerCase().trim();
@@ -17,9 +17,7 @@ public class PetSelectorProject{
         String userColor = userInput.nextLine().toLowerCase().trim();
         System.out.println("Please type in your favorite season (Either winter, spring, summer, or fall.) and press enter.");
         String userSeason = userInput.nextLine().toLowerCase().trim();
-        //System.out.println("Name = " + userName);
-        //System.out.println("Color = " + userColor);
-        //System.out.println("Season = " + userSeason);
+        
 
         //Gets the first letter of the user's name that was typed in.
         String nameFirstLetter = userName.substring(0, 1);
@@ -38,7 +36,7 @@ public class PetSelectorProject{
                     System.out.println("Your perfect pet is: Pony!");  
                 }
                 else{
-            System.out.println("Your perfect pet is: Rock!");
+                    System.out.println("Your perfect pet is: Rock!");
                 }
             
             }
@@ -47,7 +45,7 @@ public class PetSelectorProject{
                      System.out.println("Your perfect pet is: Dog!"); 
                 }
                 else{
-            System.out.println("Your perfect pet is: Rock!");
+                    System.out.println("Your perfect pet is: Rock!");
                 }
             }
             else{
@@ -74,7 +72,7 @@ public class PetSelectorProject{
                      System.out.println("Your perfect pet is: Pony!"); 
                 }
                 else{
-            System.out.println("Your perfect pet is: Rock!");
+                     System.out.println("Your perfect pet is: Rock!");
                  }
             }
             else if(userColor.equals("green")){
@@ -88,7 +86,7 @@ public class PetSelectorProject{
                      System.out.println("Your perfect pet is: Dog!"); 
                 }
                 else{
-            System.out.println("Your perfect pet is: Rock!");
+                     System.out.println("Your perfect pet is: Rock!");
                 }
                 
             }
